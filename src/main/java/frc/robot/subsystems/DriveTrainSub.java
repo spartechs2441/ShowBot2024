@@ -117,7 +117,6 @@ public class DriveTrainSub extends SubsystemBase {
         double a = ((.2 - Math.exp(m)) / (Math.exp(m) - 1));
         double k = Math.log((1 + a) / a);
         xSpeed = a * (Math.exp(k * (xSpeed * this.speed)) - 1); //might be an exponential change
-//        xSpeed *= this.speed;
         ySpeed *= -this.speed;
         zRotation = -MathUtil.applyDeadband(zRotation * this.turningSpeed, 0.2);
 
