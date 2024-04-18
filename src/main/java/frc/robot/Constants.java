@@ -18,7 +18,6 @@ public final class Constants {
      * Shows the CAN IDs of all the motors
      */
     public static class Port {
-        public static final int MAIN_JOYSTICK = 0;
         public static final int SECONDARY_JOYSTICK = 1;
         public static final int BACK_LEFT_DRIVE = 5;
         public static final int FRONT_LEFT_DRIVE = 4;
@@ -26,14 +25,9 @@ public final class Constants {
         public static final int BACK_RIGHT_DRIVE = 2;
 
         // robot has not been built so change these later
-        public static final int INTAKE = 12;
-        public static final int INTAKE_HINGE = 10;
-        public static final int INTAKE_TOWER = 13;
         public static final int SHOOTER_RIGHT = 11;
         public static final int SHOOTER_LEFT = 6;
         public static final int FEEDER = 7;
-        public static final int LEFT_CLIMB = 9;
-        public static final int RIGHT_CLIMB = 3;
     }
 
     /**
@@ -41,82 +35,14 @@ public final class Constants {
      * To avoid runtime errors, do not set these fields above 1
      */
     public static class Speed {
-        public static final double AUTO = .6;
         public static final double TELEOP = 1;
         public static final double TELEOP_ROTATION = .5;
         public static final double SHOOTER = 11;
         public static final double FEEDER = 4;
-        public static final double CLIMB = 10;
 
    }
 
-    /**
-     * Contains voltages of all the motors,
-     */
-    public static class Voltage {
-        // TODO Change these values
-        public static final double HINGE = 3;
-        public static final double INTAKE = 4;
-        public static final double INTAKE_TOWER = 8;
-
-    }
-
-    public static class RightButtons {
-        /**
-         * Button for sucking a note in
-         */
-        public static final int INTAKE = 7;
-        /**
-         * Button for spitting a note out
-         */
-        public static final int EJECT = 8;
-        /**
-         * Button for deploying the intake
-         */
-        public static final int DEPLOY = 12;
-        /**
-         * Button for putting up the intake
-         */
-        public static final int RETRACT = 11;
-        /**
-         * Button for Raising the intake tower
-         */
-        public static final int RISE = 9;
-        /**
-         * Button for Dropping the intake tower
-         */
-        public static final int DROP = 10;
-        /**
-         * Button for moving robot about the Amp
-         */
-        public static final int LIMELIGHT = 3;
-
-    }
     public static class LeftButtons {
-        /**
-         * Button for Raising the Left Climb
-         */
-        public static final int LEFT_UPPIES = 10;
-        /**
-         * Button for Lowering the Left Climb
-         */
-        public static final int LEFT_DOWNS = 9;
-        /**
-         * Button for Raising the Right Climb
-         */
-        public static final int RIGHT_UPPIES = 12;
-        /**
-         * Button for Lowering the Right Climb
-         */
-        public static final int RIGHT_DOWNS = 11;
-        /**
-         * Button for Raising the Climb
-         */
-        public static final int UPPIES = 8;
-        /**
-         * Button for Lowering the Climb
-         */
-        public static final int DOWNS = 7;
         /**
          * Button for Spinning the Flywheels and Feeder Inwards
          */

@@ -36,7 +36,6 @@ public class RobotContainer {
     private final ShooterSub shooterSub;
     private final FeederSub feederSub;
     Joystick leftFlightStick = new Joystick(Constants.Port.SECONDARY_JOYSTICK);
-    Joystick rightFlightStick = new Joystick(Constants.Port.MAIN_JOYSTICK);
 
 
     /**
@@ -63,13 +62,13 @@ public class RobotContainer {
     private void configureBindings() {
         System.out.println(
                 "Joystick name: " +
-                rightFlightStick.getName()
+                leftFlightStick.getName()
         );
 
         driveSub.setDefaultCommand(
                 new TeleopDriveCartesian(
                         driveSub,
-                        rightFlightStick
+                        leftFlightStick
                 )
         );
 
